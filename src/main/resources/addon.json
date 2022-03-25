@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "SmartPay",
+  "mainClass": "com.shadow.smartpay.SmartPay",
+  "description": "SmartPay er et system, der hjælper med at holde øje med dine ems",
+  "version": 1,
+  "author": "Shad0wsense, Nydt & Iskoldcool",
+  "category": 2,
+  "icon": "https://addonsmartpay.netlify.app/SmartPayLogo(1).png"
+}
