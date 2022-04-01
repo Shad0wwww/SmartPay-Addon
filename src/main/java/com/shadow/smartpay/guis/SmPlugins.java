@@ -19,7 +19,7 @@ public class SmPlugins extends GuiScreen {
 
 
 
-    public SmPlugins(SmartPay addon) {
+    public SmPlugins(SmartPay addon, boolean executeCommands) {
         this.addon = addon;
     }
 
@@ -35,6 +35,7 @@ public class SmPlugins extends GuiScreen {
 
         this.buttonList.add(new GuiButton(9914, this.width / 3, this.height - 300, this.width / 3, 20, "Serverlist"));
         this.buttonList.add(new GuiButton(9913, this.width / 3, this.height - 280, this.width / 3, 20, "Fjern plugins"));
+        this.buttonList.add(new GuiButton(9912, this.width / 3, this.height - 260, this.width / 3, 20, "Tilføj plugins"));
         //this.buttonList.add(new GuiButton(9913, this.width / 3, this.height - 50, this.width / 3, 20, "Afvis"));
 
 
@@ -52,6 +53,9 @@ public class SmPlugins extends GuiScreen {
         }
         if (button.id == 9913) {
             Minecraft.getMinecraft().thePlayer.sendChatMessage("/sm delallplugins");
+        }
+        if (button.id == 9912) {
+            addon.smartpayaddplugins = true;
         }
         Minecraft.getMinecraft().thePlayer.closeScreen();
     }
